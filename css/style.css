@@ -1,0 +1,1135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.white{
+    color: white;
+}
+
+.orange-bc{
+    background-color: rgb(249, 150, 3) !important;
+}
+
+.blue-bc{
+    background-color: rgb(0, 102, 255) !important;
+    margin-bottom: 10px;
+}
+
+
+/* Home page */
+
+
+/* first */
+.home{
+    width: 100% !important;
+    height: 94vh !important;
+}
+
+.home::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 94vh;
+    background-color: rgba(0, 0, 0, 0.638);
+}
+
+.home-img{
+    width: 100%;
+    height: 94vh;
+    position: relative;
+    object-fit: cover;
+}
+
+.home-text{
+    position: absolute;
+    left: 34%;
+    top: 30%;
+    z-index: 99;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+}
+
+.headings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading1{
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 6px;
+    font-size: 85px;
+}
+
+.ital{
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+}
+
+.btn{
+    background-color: rgba(0, 0, 0, 0.467);
+}
+
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.878);
+}
+
+.form-taxi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form-taxi input{
+    display: block;
+    width: 350px;
+    border: 1px solid orange !important;
+}
+
+/* Second */
+
+.header{
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 8vh !important;
+    background-color: transparent !important;
+    z-index: 99 !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-h{
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.i-heading{
+    font-family: 'Great Vibes', cursive;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.text{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    z-index: 99;
+    width: 500px;
+}
+
+.text h2{
+    font-size: 51px;
+    margin-bottom: 30px;
+    
+}
+
+.text p{
+    font-weight: 300;
+    width: 400px;
+    font-size: 15px;
+}
+
+.img-carousel{
+    width: 470px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.btn-modal{
+    margin-top: 20px;
+}
+
+.btn-modal:hover{
+    background-color: rgba(0, 0, 0, 0.353);
+    color: white;
+}
+
+.buttons-gaudi{
+    display: flex;
+    flex-direction: column;    
+}
+
+.btn-g{
+    margin: 2px 0;
+}
+
+/* third */
+
+.text-magic p{
+    width: 450px;
+}
+
+.location{
+    width: 400px;
+}
+
+.small{
+    font-size: 12px !important;
+}
+
+/* fourth */
+
+.text-picasso{
+    width: 650px;
+}
+
+.text-picasso p{
+    width: 590px;
+}
+
+iframe{
+    position: relative;
+    z-index: 99;
+}
+
+/* fifth */
+
+.text-other{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 80%;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-other h2{
+    width: 400px;
+    font-size: 35px;
+}
+
+.header-span{
+    font-size: 55px;
+}
+
+.to-do{
+    width: 200px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99;
+    margin: 5px;
+}
+
+.things{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.to-do img{
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.to-do h4{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.to-do span{
+    font-size: 10px ;
+    color: rgba(0, 0, 0, 0.686);
+}
+
+/* Hotels page */
+
+.hotels{
+    background-image: linear-gradient(to right top, #050846, #101960, #1a2a7c, #223b9a, #274eb8, #2e5bc6, #3468d3, #3b75e1, #487de0, #5585de, #628ddc, #6e95da);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header-hotels{
+    position: sticky!important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 8vh !important;
+    background-color: transparent !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-hotels ul{
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.hotels-div{
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-div{
+    width: 500px;
+    margin: 50px 50px;
+}
+.stay{
+    font-size: 65px;
+}
+
+.hotels-div h1{
+    width: 350px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radio{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.radio input{
+    margin: 0 10px;
+}
+
+form label{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+form input{
+    border-radius:10px;
+    padding: 3px 9px;
+    border: transparent;
+}
+
+
+.btn-b{
+    width: fit-content;
+    padding: 4px 13px;
+    border-radius: 20px;
+    background-color: black;
+    margin: 0 80%;
+}
+
+.img-hotels{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.hotels-div1 {
+    width: 250px !important;
+    height: 200px !important;
+    overflow: hidden;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-h{
+    width: 250px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-h:hover{
+    zoom: 1.02 ;
+    
+}
+
+/* Tours page */
+
+.header-tours{
+    position: sticky !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 6vh !important;
+    background-color: black !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 10px;
+}
+
+
+.tours-nav ul{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    /* margin-top: 5px; */
+}
+
+.image-tours{
+    background-image: url("../img/tours.avif");
+    width: 100%;
+    height: 70vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-tours::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.795), rgba(0, 0, 0, 0.037));
+}
+
+.image-tours div{
+    position: relative;
+    z-index: 90;
+    margin-left: 50px;
+}
+
+.barca-h{
+    font-size: 55px;
+}
+
+.tours-h{
+    font-size: 65px;
+    font-family: 'Great Vibes', cursive !important;
+}
+
+.tour-img{
+    width: 380px;
+    height: 280px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+
+.grid-tours{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 25px;
+    border: 0.3px solid rgba(128, 128, 128, 0.471);
+    border-radius: 5px;
+    padding: 0 !important;
+    /* height: 70vh; */
+}
+
+.grid-tours button{
+    margin: 15px auto;
+    width: 280px;
+}
+
+.grid-tours button:hover{
+    color: white !important;
+    background-color: rgba(255, 166, 0, 0.897) !important;
+}
+
+.grid-tours h3{
+    font-size: 20px !important;
+    margin: 10px;
+}
+
+.grid-tours span{
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.grid-tours p{
+    margin: 10px 0 5px 10px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none !important;
+}
+
+.modal-body h2{
+    font-size: 20px !important;
+}
+
+.modal-tours{
+    background-color: #050846 !important;
+    padding:20px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-tours label{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+}
+
+.language{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-tours p{
+    color: white;
+    margin-bottom: 0;
+}
+
+.modal-tours input{
+    border: transparent;
+    width: 220px;
+    font-size: 14px;
+}
+
+.inputs{
+    border: transparent !important;
+    border-radius: 10px;
+    padding: 5px;
+    width: 220px;
+    font-size: 14px;
+}
+
+.modal-footer button{
+    color: white !important;
+}
+
+.modal-footer button:hover{
+    background-color: rgba(255, 166, 0, 0.938) !important;
+}
+
+
+/* Footer */
+
+footer{
+    height: 6vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    position: relative;
+    z-index: 99;
+}
+
+footer p{
+    margin-top: 8px;
+}
+
+/* media queries */
+
+@media screen and (max-width:1400px) {
+    .home-text{
+        left: 31.5%;
+    }
+
+    .text-other{
+        left: 11%;
+    }
+
+    .to-do{
+        width: 170px;
+        height: 160px;
+    }
+
+    .to-do img{
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .to-do h4{
+        font-size: 13px !important;
+    }
+
+    .to-do span{
+        display: none;
+    }
+
+    .text-other{
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    .home-text{
+        left: 30%;
+    }
+
+    .to-do{
+        width: 170px;
+        height: 120px;
+        
+    }
+
+    .to-do img{
+        width: 150px;
+        height: 85px;
+        object-fit: cover;
+    }
+
+    .to-do h4{
+        font-size: 11px !important;
+    }
+
+    .to-do span{
+        display: none;
+    }
+
+    .text-other{
+        width: 70%;
+    }
+
+    .form-div h1{
+        font-size: 30px !important;
+        width: 280px;
+    }
+
+    .stay{
+        font-size: 45px;
+    }
+
+    form label{
+        font-size: 15px;
+        margin: 4px 0;
+    }   
+
+    .form-div{
+        margin: 50px 20px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .tour-img{
+        width: 600px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .home-text{
+        left: 28%;
+        top: 31%;
+    }
+
+    .heading1{
+        font-size: 75px;
+    }
+
+    .ital{
+        font-size: 55px;
+    }
+
+    .text-other{
+        top: 20%;
+        left: 18%;
+    }
+
+    .to-do{
+        width: 150px;
+        height: 100px;
+    }
+
+    .to-do img{
+        width: 130px;
+        height: 65px;
+        object-fit: cover;
+    }
+
+    .to-do h4{
+        font-size: 11px !important;
+    }
+
+    .to-do span{
+        display: none;
+    }
+
+    .hotels-div1 {
+        width: 190px !important;
+        height: 140px !important;
+    }
+    
+    .img-h{
+        width: 190px !important;
+        height: 140px !important;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:900px) {
+    .home-text{
+        left: 27%;
+        top: 36%;
+        height: 300px;
+    }
+
+    .heading1{
+        font-size: 65px;
+    }
+
+    .ital{
+        font-size: 45px;
+    }
+
+    .link{
+        font-size: 15px;
+    }
+
+    .text-other h2{
+        font-size: 30px;
+    }
+
+    .header-span{
+        font-size: 50px;
+    }
+
+    .hotels-div1 {
+        width: 160px !important;
+        height: 120px !important;
+    }
+    
+    .img-h{
+        width: 160px !important;
+        height: 120px !important;
+    }
+
+    .form-div{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .home-text{
+        left: 29%;
+        top: 37%;
+        height: 260px;
+    }
+
+    .heading1{
+        font-size: 55px;
+    }
+
+    .ital{
+        font-size: 40px;
+    }
+
+    .link{
+        font-size: 14px;
+    }
+
+    .text{
+        width: 400px;
+    }
+    
+    .text h2{
+        font-size: 43px;        
+    }
+    
+    .text p{
+        width: 350px;
+        font-size: 14px;
+    }
+
+    .img-hotels{
+        display: none;
+    }
+
+    .form-div{
+        margin: 10px 20px ;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .home-text{
+        left: 28%;
+        top: 38%;
+        height: 240px;
+    }
+
+    .heading1{
+        font-size: 50px;
+    }
+
+    .ital{
+        font-size: 30px;
+    }
+
+    .ital-m{
+        font-size: 30px;
+    }
+
+    .text{
+        width: 330px;
+        top: 10%;
+        left: 13%;
+    }
+    
+    .text h2{
+        font-size: 33px !important; 
+        width: 300px;       
+    }
+    
+    .text h5{
+        font-size: 17px;
+    }
+
+    .text p{
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .btn-g{
+        font-size: 15px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .text-other{
+        top: 20%;
+        width: 83%;
+    
+    }
+
+    .to-do{
+        height: 35px;
+        width: 135px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .home-text{
+        left: 26%;
+        top: 40%;
+        height: 220px;
+    }
+
+    .heading1{
+        font-size: 45px;
+    }
+
+    .ital{
+        font-size: 25px;
+    }
+
+    .text{
+        width: 310px;
+    }
+    
+    .text h2{
+        font-size: 34px;        
+    }
+    
+    .text p{
+        width: 295px;
+        font-size: 13px;
+    }
+
+    .btn-g{
+        font-size: 14px;
+    }
+
+    .text-other h2{
+        font-size: 25px;
+    }
+
+    .header-span{
+        font-size: 45px;
+    }
+
+    .text-other{
+        left: 10%;
+        top: 23%;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .home-text{
+        left: 25%;
+        top: 42%;
+        height: 200px;
+    }
+
+    .heading1{
+        font-size: 40px;
+    }
+
+    .ital{
+        font-size: 20px;
+    }
+
+    .link{
+        font-size: 11px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+    .home-text{
+        left:24%;
+        top: 42%;
+        height: 180px;
+    }
+
+    .heading1{
+        font-size: 40px;
+    }
+
+    .ital{
+        font-size: 20px;
+    }
+
+    .header-l a{
+        font-size: 13px;
+    }
+
+    .header ul{
+        width: 170px;
+    }
+    .tour-img{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .home-text{
+        left:19%;
+        top: 43%;
+        height: 180px;
+    }
+
+    .header-l a{
+        font-size: 13px;
+    }
+
+    .header ul{
+        width: 170px;
+    }
+
+    .text-other{
+        left: 16%;
+        top: 25%;
+    }
+
+    .form-div{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .home-text{
+        left:17%;
+    }
+
+    .text-other{
+        left: 13%;
+        top: 25%;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .home-text{
+        left:15%;
+        top: 40%;
+        height: 180px;
+    }
+
+    .text{
+        width: 280px;
+    }
+    
+    .text h2{
+        font-size: 25px !important;        
+    }
+
+    .text h5{
+        font-size: 17px !important;
+    }
+    
+    .text p{
+        width: 280px;
+        font-size: 11px !important;
+    }
+
+    .btn-g{
+        font-size: 12px;
+    }
+
+    .btn-modal{
+        font-size: 10px;
+    }
+
+    .text-other{
+        left: 10%;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width:290px) {
+    .home-text{
+        left:15%;
+        top: 43%;
+        height: 180px;
+        width: 200px;
+    }
+
+    .heading1{
+        font-size: 30px;
+    }
+
+    .ital{
+        font-size: 15px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .text{
+        width: 210px;
+    }
+    
+    .text h2{
+        font-size: 22px !important;        
+    }
+
+    .text h5{
+        font-size: 17px !important;
+    }
+    
+    .text p{
+        width: 210px;
+        font-size: 10px !important;
+    }
+
+    .btn-g{
+        font-size: 12px;
+    }
+
+    .btn-modal{
+        font-size: 10px;
+    }
+
+    .header-h{
+    width: 120px;
+}
+
+    .header-l a{
+        font-size: 10px;
+    }
+
+    .header ul{
+        width: 130px;
+    }
+
+    .barca{
+        font-size: 15px;
+    }
+
+    .i-heading{
+        font-size: 12px;
+    }
+
+    .text-other{
+        left: 10%;
+        top: 10%;
+    }
+
+    .text-other h2{
+        font-size: 22px;
+    }
+
+    .text-other span{
+        font-size: 38px;
+    }
+
+    .form-div{
+        width: 220px;
+    }
+
+    .form-div label{
+        font-size: 12px !important;
+    }
+
+    .form-div input{
+        font-size: 12px !important;
+    }
+
+    .btn-b{
+        font-size: 12px !important;
+    }
+
+    .barca-h{
+        font-size: 40px;
+    }
+
+    .tours-h{
+        font-size: 45px;
+    }
+}
+
+
+
+

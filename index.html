@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Barcelona</title>
+    <link rel="icon" type="image/x-icon" href="img/b.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active home">
+                <img class="home-img" src="img/barcelona.avif" alt="Barcelona">
+                <div class="home-text"> 
+                    <div class="headings">
+                        <h4 class="heading4 ital white">Visit</h4>
+                        <h1 class="heading1 white">BARCELONA</h1>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn btn1 hide"><a class="white link" href="pages/hotels.html">Book a hotel</a></button>
+                        <button type="button" class="btn btn1 hide"><a class="white link" href="pages/tours.html">Book a tour</a></button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <a class="white link" href="#">Book a taxi</a>
+                        </button>
+                    </div>
+                </div>
+    <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Book your taxi</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-taxi">
+                                    <label for="pickUp">Pick-up location</label>
+                                    <input class="inputs" type="text" name="pickUp" id="pickUp" required>
+                                    <label for="stop">Stop location</label>
+                                    <input class="inputs" type="text" name="stop" id="stop" required>
+                                    <label for="date">Date</label>
+                                    <input class="inputs" type="date" name="date" id="date" required>
+                                    <label for="time">Time</label>
+                                    <input class="inputs" type="time" name="time" id="time" required>
+                                    <label for="mail">E-mail for confirmation</label>
+                                    <input class="inputs" type="email" name="mail" id="mail" required>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="search" class="btn white orange-bc">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item home">
+                <!-- <video class="home-img video" src="img/Cathedral - 49322.mp4" controls loop muted autoplay ></video> -->
+                <img class="home-img" src="img/gaudi1.avif" alt="Gaudi">
+                <header class="header">
+                    <h3 class="header-h white"> <span class="i-heading"> Visit</span>
+                        <span class="barca">BARCELONA</span></h3>
+                    <nav>
+                        <ul class="header-l">
+                            <li><a class="white" href="index.html">HOME</a></li>
+                            <li><a class="white" href="pages/hotels.html">HOTELS</a></li>
+                            <li><a class="white" href="pages/tours.html">TOURS</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="text white">
+                    <h2 class="heading2 ">GAUDI ATTRACTIONS</h2>
+                    <p>The Works of Antoni Gaudí is an exceptional and outstanding creative contribution to the architectural heritage of modern times. His work is rooted in the particular character of the period, drawing on the one hand from traditional Catalan patriotic sources and on the other from the technical and scientific progress of modern industry. Gaudí’s work is a remarkable reflection of all these different facets of society and has a unique and singular character. In fact, his works are particularly associated with Modernisme, and in this sense, Gaudí can be regarded as the most representative and outstanding of the Modernista architects.</p>
+                    <div class="buttons-gaudi">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn white btn-g" data-bs-toggle="modal" data-bs-target="#sagrada">La Sagrada Familia
+                        </button>
+                        <button type="button" class="btn white btn-g" data-bs-toggle="modal" data-bs-target="#casaMila">La Pedrera-Casa Milà
+                        </button>
+                        <button type="button" class="btn white btn-g" data-bs-toggle="modal" data-bs-target="#casaBatillo">Casa Batillo
+                        </button>
+                        <button type="button" class="btn white btn-g" data-bs-toggle="modal" data-bs-target="#parkGuell">Park Güell
+                        </button>
+                        <button type="button" class="btn white btn-g" data-bs-toggle="modal" data-bs-target="#viscens">Casa Vicens
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item home">
+                <img class="home-img" src="img/fountain.avif" alt="Barcelona">
+                <header class="header">
+                    <h3 class="header-h white"> <span class="i-heading"> Visit</span>
+                        <span class="barca">BARCELONA</span></h3>
+                    <nav>
+                        <ul class="header-l">
+                            <li><a class="white" href="index.html">HOME</a></li>
+                            <li><a class="white" href="pages/hotels.html">HOTELS</a></li>
+                            <li><a class="white" href="pages/tours.html">TOURS</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="text white text-magic ">
+                    <h2 class="heading2 ">MAGIC FOUNTAIN of <span class="ital ital-m">Monjuic</span></h2>
+                    <h5>SHOW TIMES</h5>
+                    <p>The Magic Fountain and the fountains on Avinguda Maria Cristina will be turned off by activation due to the activation of the drought protocol in the city of Barcelona.</p>
+                    <h5>CHOREOGRAPHIES</h5>
+                    <p>The Magic Fountain can produce around 7 billion light-and-water combinations by combining the hydraulic features and lighting it is equipped with. Check out the sequences programmed for the fountain.</p>
+                    <div class="location">
+                        <h5>Location and how to get there</h5>
+                        <p>Plaça de Carles Buïgas, 1
+                            Neighborhood / District:
+                            el Poble-sec (Sants-Montjuïc)</p>
+                        <p class="small">FGC and metro (L1 and L3, stop Espanya)</p>
+                        <p class="small">Bus (55 and tourist bus, stop MNAC)</p>
+                        <p class="small">Bike and Bicing parking racks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item home">
+                <img src="img/picasso.avif" class="home-img" alt="Picasso">
+                <header class="header">
+                    <h3 class="header-h white"> <span class="i-heading"> Visit</span>
+                        <span class="barca">BARCELONA</span></h3>
+                    <nav>
+                        <ul class="header-l">
+                            <li><a class="white" href="index.html">HOME</a></li>
+                            <li><a class="white" href="pages/hotels.html">HOTELS</a></li>
+                            <li><a class="white" href="pages/tours.html">TOURS</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="text white text-picasso">
+                    <h2 class="heading2 ">THE MUSEU PICASSO
+                        BARCELONA</h2>
+                    <h5>ROOM 2 BARCELONA, 1895-1897</h5>
+                    <p>In Barcelona, Pablo continued his education at La Llotja Fine Art School. A set of drawings and oils paintings show his academic activity, dominated by life drawings and the copy of models for sculptures and paintings. In parallel, he focused his attention on a series of urbans aspects linked to his immediate surroundings, which helped him practise painting outdoors and escape the stifling atmosphere of La Llotja.</p>
+                    <p >From 1896 onwards he concentrated more and more on portrait and landscape painting as he strove to capture the essence of the human figure. He also worked on religious and historical genres, which featured prominently in the school’s curriculum. He presented his first important oil painting, First Communion, at the 3rd Exhibition of Fine Arts and Artístic Industries in Barcelona in competition against established artists.</p>
+                    <a class="btn white btn-modal" href="http://www.museupicasso.bcn.cat/ca/colleccio/sales-de-la-colleccio/index_en.html">Read more...</a>
+                </div>
+            </div>
+            <div class="carousel-item home">
+                <img src="img/magic.avif" class="home-img" alt="Barcelona">
+                <header class="header">
+                    <h3 class="header-h white"> <span class="i-heading"> Visit</span>
+                        <span class="barca">BARCELONA</span></h3>
+                    <nav>
+                        <ul class="header-l">
+                            <li><a class="white" href="index.html">HOME</a></li>
+                            <li><a class="white" href="pages/hotels.html">HOTELS</a></li>
+                            <li><a class="white" href="pages/tours.html">TOURS</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="text-other white">
+                    <h2>Other things to do in <span class="header-span">BARCELONA </span></h2>
+                    <div class="things">
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo1">
+                            <img class="hidden" src="img/mercado.avif" alt="Mercado">
+                            <h4>Mercado de La Boqueria</h4>
+                            <span class="hidden">Vibrant public market with diverce foods.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo2">
+                            <img class="hidden" src="img/camnou.avif" alt="CampNou">
+                            <h4>Camp Nou</h4>
+                            <span class="hidden">98,000-capacity stadium for FC Barcelona.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo3">
+                            <img class="hidden" src="img/Parc-de-la-Ciutadella.jpg" alt="Ciutadella">
+                            <h4>Ciutadella Park</h4>
+                            <span class="hidden">19th-century formal park with zoo.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo4">
+                            <img class="hidden" src="img/cathedral.webp" alt="Cathedral">
+                            <h4>Cathedral of Barcelona</h4>
+                            <span class="hidden">Landmark 13th-century place of worship.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo5">
+                            <img class="hidden" src="img/museu.jfif" alt="Museu Nacional d'Art de Catalunya">
+                            <h4>Museu Nacional d'Art</h4>
+                            <span class="hidden">11th- to 20th-century Catalan art museum.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo6">
+                            <img class="hidden" src="img/larambla.jpg" alt="La Rambla">
+                            <h4>La Rambla</h4>
+                            <span class="hidden">Cultural hub for shopping and sights.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo7">
+                            <img class="hidden" src="img/akvarium.jpg" alt="Aquàrium Barcelona">
+                            <h4>Aquàrium Barcelona</h4>
+                            <span class="hidden">Themed tanks with varied marine habitats.</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo8">
+                            <img class="hidden" src="img/calble2.jfif" alt="Telefèric de Montjuïc (Barcelona Cable Car)">
+                            <h4>Telefèric de Montjuïc</h4>
+                            <span class="hidden">Cable car with panoramic city views. </span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo9">
+                            <img class="hidden" src="img/tibidabo.avif" alt="Parque de atracciones Tibidabo">
+                            <h4>Amusement park Tibidabo</h4>
+                            <span class="hidden">Amusement park with rides & city views</span>
+                        </button>
+                        <button type="button" class="to-do" data-bs-toggle="modal" data-bs-target="#todo10">
+                            <img class="hidden" src="img/beach.jpg" alt="Barceloneta Beach">
+                            <h4>Barceloneta Beach</h4>
+                            <span class="hidden">Amusement park with rides & city views</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+
+
+    <footer>
+        <p class="white">Copyright by Sara Isijanovski, all rights reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="sagrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sagrada Familia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="sagrada-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/sagrada.avif" alt="Sagrada">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/sagrada2.avif" alt="Sagrada.">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/sagrada3.avif"  alt="Sagrada">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/sagrada4.avif"  alt="Sagrada">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#sagrada-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#sagrada-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>La Sagrada Família, cathedral in Barcelona, Spain, that was designed by Antonio Gaudí.
+
+                        Begun in 1882 and still unfinished, the tactile, organic form of the Roman Catholic basilica of La Sagrada Família (The Holy Family) is one of Barcelona’s most famous landmarks. It is an unexpected sight in its industrial setting, with its bold flying buttresses and twisted towers looming over the city.
+                        
+                        Commissioned in 1882, the cathedral was funded by donations to encourage Christianity in Barcelona, which was in decline at the time. In 1883 Gaudí took over as chief architect, and he changed the original Neo-Gothic design to one based on the geometric forms found in nature. It was to be Gaudí’s Expressionist vision of a 20th-century cathedral, where he would use visual symbolism to express the many mysteries of the Christian faith.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Casa Mila -->
+    <div class="modal fade" id="casaMila" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">La Pedrera-Casa Milà</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="casamila-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/casaMila1.avif" alt="Casa Mila">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/casaMila2.avif" alt="Casa Mila">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/casaMila3.avif"  alt="Casa Mila">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/casaMila4.avif"  alt="Casa Mila">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#casamila-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#casamila-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>Casa Mila (La Pedrera) is regarded as Antoni Gaudi’s most iconic work of civic architecture due its constructional and functional innovations, as well as its ornamental and decorative solutions, which broke with the architectural styles of his day.
+
+                        For Gaudi, La Pedrera represented the most advanced approach to a building on a chamfered street corner in the Eixample in Barcelona. It consists of two blocks of apartments, each with its own entrance, structured around two large interconnected courtyards with ramps down to the garage for vehicles.
+                        <a class="btn white btn-modal" href="https://www.lapedrera.com/en/la-pedrera/architecture">Read more...</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Casa Batillo -->
+    <div class="modal fade" id="casaBatillo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sagrada Familia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="casabatillo-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/casaBatillo.avif" alt="Casa Batillo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/casaBatillo2.avif" alt="Casa Batillo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/casaBatillo3.avif"  alt="Casa Batillo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/casaBatillo4.avif"  alt="Casa Batillo">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#casabatillo-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#casabatillo-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>
+                        
+                    <h6>Construction of Casa Batlló</h6>
+                    Mr Josep Batlló granted full creative freedom to Antoni Gaudí, putting him in charge of a project that initially entailed demolishing the building. However, thanks to the courage shown by Gaudí, the demolition of the house was ruled out, and it was fully reformed between 1904 and 1906. The architect completely changed the façade, redistributing the internal partitioning, expanding the patio of lights and converting the inside into a true work of art. Besides its artistic value, the building is also extremely functional, much more characteristic of modern times than of the past. Some even see elements that herald the architectural trends of the late 20th Century.
+                    <a class="btn white btn-modal" href="https://www.casabatllo.es/en/antoni-gaudi/casa-batllo/history/?_adin=11734293054">Read more...</a>
+                </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Park Guell -->
+    <div class="modal fade" id="parkGuell" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Park Güell</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="parkguell-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/parkGuell.avif" alt="Park Guell">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/parkGuell2.avif" alt="Park Guell">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/parkGuell3.avif"  alt="Park Guell">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/parkGuell4.avif"  alt="Park Guell">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#parkguell-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#parkguell-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>The association between entrepreneur Eusebi Güell and architect Antoni Gaudí began when Güell saw a window display that Gaudí had planned for glove retailer Esteve Comella at the Universal Exhibition in Paris in 1878. That same year, Güell commissioned him to make the furniture for the pantheon chapel at the Palacio de Sobrellano in Comillas, a town on the Cantabrian coast, for his well-heeled father-in-law, Antonio López y López. The architect of that magnificent neo-gothic chapel was Joan Martorell i Montells, at whose studio Gaudí had worked.</p>
+                    <p>Some years later, Joan Martorell commissioned Antoni Gaudí with another project, thereby consolidating the association between the two architects. This time it was for the pavilions of the porter’s gatehouse and stables of Finca Güell (1883-1887), a property that the Barcelona businessman had in Les Corts, to the west of Barcelona. </p>
+                    <p>Martorell, an architect enjoying great prestige at the time and whom Gaudí always considered to be his master, was a personality with a very decisive influence on his future production.</p>
+                    <a class="btn white btn-modal" href="https://parkguell.barcelona/en/park-guell/origin-and-creation">Read more...</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="viscens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sagrada Familia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="viscens-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/vicens1.JPG" alt="Vicens">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/vicens2.jpg" alt="Vicens">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/vicens3.jpeg"  alt="Vicens">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/vicens4.jpg"  alt="Vicens">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#viscens-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#viscens-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <p>Casa Vicens is a modernist building situated in the Gràcia neighbourhood of Barcelona. It is the work of architect Antoni Gaudí and is considered to be his first major project. It was built between 1883 and 1885, although Gaudí drew up the initial plans between 1878 and 1880. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal other things -->
+    <div class="modal fade" id="todo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mercado de La Boqueria</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo1-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/mercado2.avif" alt="Mercado">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/mercado.avif" alt="Mercado">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/mercado3.avif"  alt="Mercado">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/mercado4.avif"  alt="Mercado">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo1-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo1-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/PcWqFUDaKJinSw6Y6">Directions</a></button>
+                    <p class="small">The Mercat de Sant Josep de la Boqueria, often simply referred to as La Boqueria, is a large public market in the Ciutat Vella district of Barcelona, Catalonia, Spain, and one of the city's foremost tourist landmarks, with an entrance from La Rambla, not far from the Liceu, Barcelona's opera house. The market has a very diverse selection of goods.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Camp Nou</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo2-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/campnou2.avif" alt="Camp Nou">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/camnou.avif" alt="Camp Nou">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/campnou3.avif"  alt="Camp Nou">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/campnou4.avif"  alt="Camp Nou">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo2-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo2-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/6WGNK1KM1vrpB6iV6">Directions</a></button>
+                    <p class="small">Camp Nou, officially branded as Spotify Camp Nou for sponsorship and financial reasons, is a football stadium in Barcelona, Spain. It has been the home stadium of FC Barcelona since its completion in 1957. With a current seating capacity of 99,354, it is the largest stadium in Spain and Europe, and the third largest association football stadium in the world. It has hosted two European Cup/Champions League finals in 1989 and 1999, two European Cup Winners' Cup finals, four Inter-Cities Fairs Cup final games, five UEFA Super Cup games, four Copa del Rey finals, two Copa de la Liga finals, and twenty-one Supercopa de España finals. It also hosted five matches in the 1982 FIFA World Cup, two out of four matches at the 1964 European Nations' Cup, and the football tournament's final at the 1992 Summer Olympics. On 15 March 2022, it was announced that music streaming service Spotify had reached a deal with FC Barcelona to acquire the naming rights to the stadium in a deal worth $310 million.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ciutadella Park</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo3-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/ciutadela2.jpg" alt="Ciutadella Park">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/Parc-de-la-Ciutadella.jpg" alt="Ciutadella Park">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/ciutadela3.jpg"  alt="Ciutadella Park">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/ciutadela4.webp"  alt="Ciutadella Park">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo3-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo3-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/muZpGS7EbM1aYRoEA">Directions</a></button>
+                    <p class="small">The Parc de la Ciutadella is a park on the northeastern edge of Ciutat Vella, Barcelona, Catalonia, Spain. For decades following its creation in the mid-19th century, this park was the city's only green space. The 31 hectares grounds include the city zoo, the Palau del Parlament de Catalunya, a small lake, museums, and a large fountain designed by Josep Fontserè. As the location of the Parliament of Catalonia, the tensions in 2018 and 2019 regarding Catalan independence regularly led to the police closure of the park to public access to prevent crowds forming near to the official buildings.</p>
+                    <h6>Arco de Triunfo de Barcelona</h6>
+                    <p class="small">The Arc de Triomf is a triumphal arch in the city of Barcelona in Catalonia, Spain. It was built by architect Josep Vilaseca i Casanovas as the main access gate for the 1888 Barcelona World Fair. The arch crosses over the wide central promenade of the Passeig de Lluís Companys, leading to the Ciutadella Park that now occupies the site of the world fair. It is located at the northern end of the promenade, facing the Passeig de Sant Joan. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cathedral of Barcelona</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo4-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/cathedral.webp" alt="Cathedral of Barcelona">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/cathedral2.jfif" alt="Cathedral of Barcelona">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/cathedral3.jpg"  alt="Cathedral of Barcelona">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/cathedral4.jpg"  alt="Cathedral of Barcelona">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo4-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo4-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/6WGNK1KM1vrpB6iV6">Directions</a></button>
+                    <p class="small">Camp Nou, officially branded as Spotify Camp Nou for sponsorship and financial reasons, is a football stadium in Barcelona, Spain. It has been the home stadium of FC Barcelona since its completion in 1957. With a current seating capacity of 99,354, it is the largest stadium in Spain and Europe, and the third largest association football stadium in the world. It has hosted two European Cup/Champions League finals in 1989 and 1999, two European Cup Winners' Cup finals, four Inter-Cities Fairs Cup final games, five UEFA Super Cup games, four Copa del Rey finals, two Copa de la Liga finals, and twenty-one Supercopa de España finals. It also hosted five matches in the 1982 FIFA World Cup, two out of four matches at the 1964 European Nations' Cup, and the football tournament's final at the 1992 Summer Olympics. On 15 March 2022, it was announced that music streaming service Spotify had reached a deal with FC Barcelona to acquire the naming rights to the stadium in a deal worth $310 million.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Museu Nacional d'Art de Catalunya, Parc de Montjuïc</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo5-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/museu.jfif" alt="Museu Nacional d'Art de Catalunya">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/museu.jpg" alt="Museu Nacional d'Art de Catalunya">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/museu3.avif"  alt="Museu Nacional d'Art de Catalunya">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/museu4.jpg"  alt="Museu Nacional d'Art de Catalunya">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo5-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo5-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/b4MmcsnsNWjbX5sD7">Directions</a></button>
+                    <p class="small">The Museu Nacional d'Art de Catalunya, abbreviated as MNAC, is a museum of Catalan visual art located in Barcelona, Catalonia, Spain. Situated on Montjuïc hill at the end of Avinguda de la Reina Maria Cristina, near Pl Espanya, the museum is especially notable for its outstanding collection of romanesque church paintings, and for Catalan art and design from the late 19th and early 20th centuries, including modernisme and noucentisme. The museum is housed in the Palau Nacional, a huge, Italian-style building dating to 1929. The Palau Nacional, which has housed the Museu d'Art de Catalunya since 1934, was declared a national museum in 1990 under the Museums Law passed by the Catalan Government. That same year, a thorough renovation process was launched to refurbish the site, based on plans drawn up by the architects Gae Aulenti and Enric Steegmann, who were later joined in the undertaking by Josep Benedito. The Oval Hall was reopened in 1992 on the occasion of the Olympic Games, and the various collections were installed and opened over the period from 1995 to 2004. The Museu Nacional d'Art de Catalunya was officially inaugurated on 16 December 2004.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">La Rambla</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo6-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/larambla.jpg" alt="La Rambla">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/larambla2.jfif" alt="La Rambla">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/larambla3.jpg"  alt="La Rambla">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/larambla4.jpg"  alt="La Rambla">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo6-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo6-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/4WM8ck8BCCDS5Ny77">Directions</a></button>
+                    <p class="small">La Rambla is a street in central Barcelona. A tree-lined pedestrian street, it stretches for 1.2 km connecting the Plaça de Catalunya in its center with the Christopher Columbus Monument at Port Vell. La Rambla forms the boundary between the neighbourhoods of the Barri Gòtic to the east and the El Raval to the west. La Rambla can be crowded, especially during the height of the tourist season. Its popularity with tourists has affected the character of the street, which has shifted in composition to pavement cafes and souvenir kiosks. It has also suffered from the attention of pickpockets. The Spanish poet Federico García Lorca once said that La Rambla was "the only street in the world which I wish would never end."</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aquàrium Barcelona</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo7-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/akvarium.jpg" alt="Aquàrium Barcelona">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/akvarium2.jpg" alt="Aquàrium Barcelona">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/akvarium3.jpg"  alt="Aquàrium Barcelona">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/akvarium4.jpg"  alt="Aquàrium Barcelona">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo7-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo7-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/W9p9Vhbb8J1r5s6n7">Directions</a></button>
+                    <p class="small">Aquarium Barcelona is an aquarium located in Port Vell, a harbor in Barcelona, Catalonia, Spain. The 35 aquariums at the facility are home to 11,000 animals representing 451 species. The aquarium contains a total of 5,000,000 L. This includes an ocean tank for sharks, rays and other large fish, which is 36 m in diameter, 5 m deep, contains 3,700,000 L of water and has an 80-meter underwater tunnel. The Aquarium of Barcelona is part of the Aspro Parks. The aquarium is a member of the Iberian Association of Zoos and Aquaria.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Telefèric de Montjuïc (Barcelona Cable Car)</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo8-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/cable.jpg" alt="Telefèric de Montjuïc (Barcelona Cable Car)">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/calble.jpg" alt="Telefèric de Montjuïc (Barcelona Cable Car)">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/calble2.jfif"  alt="Telefèric de Montjuïc (Barcelona Cable Car)">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/calble3.jpg"  alt="Telefèric de Montjuïc (Barcelona Cable Car)">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo8-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo8-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/1VDLUL2dMuLnqM6a8">Directions</a></button>
+                    <p class="small">The Montjuïc Cable Car is a gondola lift in Barcelona, Catalonia, Spain. The cable car runs from a lower terminus adjacent to the Montjuïc Park upper station of the Montjuïc funicular, and climbs higher up the Montjuïc hill to a terminal near the Montjuïc Castle on the summit of the hill. At its midpoint, the line executes a 90 degree turn and the cabins pass through Mirador station, although only down-bound cabins stop at this point. The cable car was originally put into service in 1970, replacing a former upper stage of the Montjuïc funicular. As built, it used a fleet of open cars. It was closed between October 2004 and May 2007, for a complete overhaul in order to increase capacity. At the same time the open cars were replaced by 55 new closed cabins. The cable car line is 752 m in length, and climbs a vertical distance of 84.55 m at a speed of 2.5 m/s. The cars slow to a crawl as they pass through the station to allow passengers to board or exit. Two cars are equipped with the facility to carry wheelchairs.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Parque de atracciones Tibidabo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo9-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/tibidabo.avif" alt="Parque de atracciones Tibidabo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/tibidabo2.jpg" alt="Parque de atracciones Tibidabo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/tibidabo3.jpg"  alt="Parque de atracciones Tibidabo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/tibidabo4.jpeg"  alt="Parque de atracciones Tibidabo">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo9-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo9-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/f5MFCvR7HCQv3P1s6">Directions</a></button>
+                    <p class="small">Tibidabo Amusement Park is an amusement park in Barcelona, Spain.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="todo10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">La Barceloneta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="todo10-c" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-carousel" src="img/beach.jpg" alt="La Barceloneta">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/beach2.jpg" alt="La Barceloneta">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/beach3.jpg"  alt="La Barceloneta">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-carousel" src="img/beach4.jpg"  alt="La Barceloneta">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#todo10-c" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#todo10-c" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <button class="btn blue-bc"><a class="white" target="_blank" href="https://goo.gl/maps/muSLWpi73Spy4Bsf9">Directions</a></button>
+                    <p class="small">La Barceloneta is a neighborhood in the Ciutat Vella district of Barcelona, Catalonia, Spain. The neighborhood was constructed during the 18th century for the residents of the Ribera neighborhood who had been displaced by the construction of the Ciutadella of Barcelona. The neighborhood is roughly triangular, bordered by the Mediterranean Sea, the Moll d'Espanya of Port Vell, and the El Born neighborhood. This neighborhood has its own flag, and is serviced by its own stop on the Barcelona Metro line 4. This is a good starting point for whatever itinerary there may be to adventure through La Barceloneta. The yellow line, L4, which is the metro line that stops at La Barceloneta, is the most popular for pickpocketing. The neighborhood can also be discovered by taking Las Gorondrinas, which leave from the front port of the Columbus monument. This way the marine strip can be discovered, but the real charm of this neighborhood is by getting lost in the side streets or alleyways. Torre Sant Sebastià is the terminus of the Port Vell Aerial Tramway; opened in 1931, it connects La Barceloneta with Montjuïc across Port Vell.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
